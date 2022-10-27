@@ -8,6 +8,7 @@ public class UserInfoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserInfoApplication.class, args);
+		System.out.println("customer updated");
 	}
 
 }
