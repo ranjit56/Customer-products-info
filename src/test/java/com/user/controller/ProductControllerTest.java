@@ -19,8 +19,7 @@ import org.springframework.ui.Model;
 import com.user.entity.Product;
 import com.user.service.ProductService;
 
-@SpringBootTest
-@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes= {ProductControllerTest.class})
 public class ProductControllerTest {
 	 
 	@InjectMocks

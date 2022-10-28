@@ -21,8 +21,8 @@ import com.user.repository.RoleRepository;
 import com.user.repository.UserRepository;
 import com.user.service.UserServiceImpl;
 
-@SpringBootTest
-@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes= {UserServiceTest.class})
+//@RunWith(SpringJUnit4ClassRunner.class)
 public class UserServiceTest {
 
 	@InjectMocks

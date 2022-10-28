@@ -17,8 +17,7 @@ import com.user.securiry.service.SecurityService;
 import com.user.service.UserService;
 import com.user.validator.UserValidator;
 
-@SpringBootTest
-@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes= {UserControllerTest.class})
 public class UserControllerTest {
 	
 	@InjectMocks

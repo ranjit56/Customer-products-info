@@ -22,8 +22,7 @@ import com.user.entity.Product;
 import com.user.repository.ProductRepository;
 import com.user.service.ProductServiceimpl;
 
-@SpringBootTest
-@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes= {ProductServiceImplTest.class})
 public class ProductServiceImplTest {
 
 	@InjectMocks

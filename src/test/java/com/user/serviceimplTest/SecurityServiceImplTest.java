@@ -14,8 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.user.entity.User;
 import com.user.securiry.service.SecurityServiceImpl;
 
-@SpringBootTest
-@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes= {SecurityServiceImplTest.class})
 public class SecurityServiceImplTest {
 	
 	@InjectMocks
