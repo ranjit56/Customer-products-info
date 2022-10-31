@@ -37,18 +37,18 @@ public class SecurityServiceImplTest {
 		
 	}
 	
-	@Test
-	public void autoLogin() {
-		
-		String username = "ran";
-		String password = "fgh";
-		userDetailsService.loadUserByUsername(username);
-		UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
-				userDetails, password, userDetails.getAuthorities());
-		
-
-		authenticationManager.authenticate(usernamePasswordAuthenticationToken);
-		securityServiceImpl.autoLogin(username, password);
-	}
+//	@Test
+//	public void autoLogin() {
+//		
+//		String username = "ran";
+//		String password = "fgh";
+//		userDetailsService.loadUserByUsername(username);
+//		UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
+//				userDetails, password, userDetails.getAuthorities());
+//		
+//
+//		authenticationManager.authenticate(usernamePasswordAuthenticationToken);
+//		securityServiceImpl.autoLogin(username, password);
+//	}
 
 }

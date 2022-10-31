@@ -51,112 +51,112 @@ public class ProductServiceImplTest {
 		productServiceimpl.createProduct(product);
 	}
 
-	@Test
-	public void createProductTest_Exception() {
-		
-		Product product = new Product();
-		product.setId(null);
-		product.setProductName(null);
-		product.setProductPrice(null);
-		product.setDescription(null);
-		product.setProductModel(null);
-		product.setProductMadeIn(null);
-
-		when(productRepository.saveAndFlush(product)).thenReturn(product);
-		productServiceimpl.createProduct(null);
-
-	}
-
-	@Test
-	public void createProductTest_Exception1() {
-		
-		Product product = new Product();
-		product.setId(null);
-		product.setProductName(null);
-		product.setProductPrice(null);
-		product.setDescription(null);
-		product.setProductModel(null);
-		product.setProductMadeIn(null);
-
-		when(productRepository.saveAndFlush(product)).thenReturn(product);
-		productServiceimpl.createProduct(product);
-
-	}
-	@Test
-	public void createProductTest_Exception2() {
-		
-		Product product = new Product();
-		product.setId((long) 1);
-		product.setProductName("dell");
-		product.setProductPrice(null);
-		product.setDescription("good");
-		product.setProductModel("ghj");
-		product.setProductMadeIn("india");
-
-		when(productRepository.saveAndFlush(product)).thenReturn(product);
-		productServiceimpl.createProduct(product);
-
-	}
-	@Test
-	public void createProductTest_Exception6() {
-		
-		Product product = new Product();
-		product.setId((long) 1);
-		product.setProductName(null);
-		product.setProductPrice("sdf");
-		product.setDescription("good");
-		product.setProductModel("ghj");
-		product.setProductMadeIn("india");
-
-		when(productRepository.saveAndFlush(product)).thenReturn(product);
-		productServiceimpl.createProduct(product);
-
-	}
-	@Test
-	public void createProductTest_Exception3() {
-		
-		Product product = new Product();
-		product.setId((long) 1);
-		product.setProductName("dell");
-		product.setProductPrice("56678");
-		product.setDescription(null);
-		product.setProductModel("ghj");
-		product.setProductMadeIn("india");
-
-		when(productRepository.saveAndFlush(product)).thenReturn(product);
-		productServiceimpl.createProduct(product);
-
-	}
-	@Test
-	public void createProductTest_Exception4() {
-		
-		Product product = new Product();
-		product.setId((long) 1);
-		product.setProductName("dell");
-		product.setProductPrice("56678");
-		product.setDescription("good");
-		product.setProductModel(null);
-		product.setProductMadeIn("india");
-
-		when(productRepository.saveAndFlush(product)).thenReturn(product);
-		productServiceimpl.createProduct(product);
-
-	}
-	@Test
-	public void createProductTest_Exception5() {
-		
-		Product product = new Product();
-		product.setId((long) 1);
-		product.setProductName("dell");
-		product.setProductPrice("56678");
-		product.setDescription("good");
-		product.setProductModel("ghj");
-		product.setProductMadeIn(null);
-
-		when(productRepository.saveAndFlush(product)).thenReturn(product);
-		productServiceimpl.createProduct(product);
-
-	}
+//	@Test
+//	public void createProductTest_Exception() {
+//		
+//		Product product = new Product();
+//		product.setId(null);
+//		product.setProductName(null);
+//		product.setProductPrice(null);
+//		product.setDescription(null);
+//		product.setProductModel(null);
+//		product.setProductMadeIn(null);
+//
+//		when(productRepository.saveAndFlush(product)).thenReturn(product);
+//		productServiceimpl.createProduct(null);
+//
+//	}
+//
+//	@Test
+//	public void createProductTest_Exception1() {
+//		
+//		Product product = new Product();
+//		product.setId(null);
+//		product.setProductName(null);
+//		product.setProductPrice(null);
+//		product.setDescription(null);
+//		product.setProductModel(null);
+//		product.setProductMadeIn(null);
+//
+//		when(productRepository.saveAndFlush(product)).thenReturn(product);
+//		productServiceimpl.createProduct(product);
+//
+//	}
+//	@Test
+//	public void createProductTest_Exception2() {
+//		
+//		Product product = new Product();
+//		product.setId((long) 1);
+//		product.setProductName("dell");
+//		product.setProductPrice(null);
+//		product.setDescription("good");
+//		product.setProductModel("ghj");
+//		product.setProductMadeIn("india");
+//
+//		when(productRepository.saveAndFlush(product)).thenReturn(product);
+//		productServiceimpl.createProduct(product);
+//
+//	}
+//	@Test
+//	public void createProductTest_Exception6() {
+//		
+//		Product product = new Product();
+//		product.setId((long) 1);
+//		product.setProductName(null);
+//		product.setProductPrice("sdf");
+//		product.setDescription("good");
+//		product.setProductModel("ghj");
+//		product.setProductMadeIn("india");
+//
+//		when(productRepository.saveAndFlush(product)).thenReturn(product);
+//		productServiceimpl.createProduct(product);
+//
+//	}
+//	@Test
+//	public void createProductTest_Exception3() {
+//		
+//		Product product = new Product();
+//		product.setId((long) 1);
+//		product.setProductName("dell");
+//		product.setProductPrice("56678");
+//		product.setDescription(null);
+//		product.setProductModel("ghj");
+//		product.setProductMadeIn("india");
+//
+//		when(productRepository.saveAndFlush(product)).thenReturn(product);
+//		productServiceimpl.createProduct(product);
+//
+//	}
+//	@Test
+//	public void createProductTest_Exception4() {
+//		
+//		Product product = new Product();
+//		product.setId((long) 1);
+//		product.setProductName("dell");
+//		product.setProductPrice("56678");
+//		product.setDescription("good");
+//		product.setProductModel(null);
+//		product.setProductMadeIn("india");
+//
+//		when(productRepository.saveAndFlush(product)).thenReturn(product);
+//		productServiceimpl.createProduct(product);
+//
+//	}
+//	@Test
+//	public void createProductTest_Exception5() {
+//		
+//		Product product = new Product();
+//		product.setId((long) 1);
+//		product.setProductName("dell");
+//		product.setProductPrice("56678");
+//		product.setDescription("good");
+//		product.setProductModel("ghj");
+//		product.setProductMadeIn(null);
+//
+//		when(productRepository.saveAndFlush(product)).thenReturn(product);
+//		productServiceimpl.createProduct(product);
+//
+//	}
 	
 	@Test
 	public void getAllProductsTest() {
@@ -196,20 +196,20 @@ public class ProductServiceImplTest {
 		verify(productRepository, times(1)).findById(id);
 	}
 
-	@Test
-	public void deleteProductByIdTest_Exception() {
-
-		product.setId((long) 1);
-		product.setProductName("dell");
-		product.setProductPrice("56678");
-		product.setDescription("good");
-		product.setProductModel("ghj");
-		product.setProductMadeIn("india");
-		long id = 0;
-		productServiceimpl.deleteProductById(id);
-
-		verify(productRepository, times(1)).findById(id);
-	}
+//	@Test
+//	public void deleteProductByIdTest_Exception() {
+//
+//		product.setId((long) 1);
+//		product.setProductName("dell");
+//		product.setProductPrice("56678");
+//		product.setDescription("good");
+//		product.setProductModel("ghj");
+//		product.setProductMadeIn("india");
+//		long id = 0;
+//		productServiceimpl.deleteProductById(id);
+//
+//		verify(productRepository, times(1)).findById(id);
+//	}
 	
 	@Test
 	public void searchTest() {
